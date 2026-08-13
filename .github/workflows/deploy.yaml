@@ -3,7 +3,7 @@ name: Deploy To GAE
 on:
   push:
     branches:
-    - master
+    - main
 
 jobs:
   run:
