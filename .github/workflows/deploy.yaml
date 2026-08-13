@@ -1,9 +1,13 @@
 name: Deploy To GAE
 
+# Деплой запускается руками. Автоматический по пушу в main включён быть не
+# может: секрета GOOGLE_SERVICE_ACCOUNT_CREDENTIALS_JSON в репозитории нет, шаг
+# авторизации падает сразу («must specify exactly one of
+# workload_identity_provider or credentials_json»). До этой правки workflow
+# стоял на ветке master, которой нет с переименования, поэтому отказ никому не
+# показывался.
 on:
-  push:
-    branches:
-    - main
+  workflow_dispatch:
 
 jobs:
   run:
