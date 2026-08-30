@@ -11,26 +11,23 @@ You can also submit a PR if you'd like! If viable, your submission should includ
 Set up a python (3.10) environment however you'd like. Install the developer requires to your python environment:
 
 ```sh
-$ pip install -r requirements-dev.txt
+pip install -r requirements-dev.txt
 ```
 
 Run the app locally and start breaking things:
 
 ```sh
-$ flask run
+flask run
 ```
 
 Then hit up [localhost:5000](http://127.0.0.1:5000/) to check out what you've ruined. You can run the full lint and test suite locally via `tox`
 
 ```sh
-$ pip install tox
+pip install tox
 ```
 
 And finally:
 
 ```sh
-$ tox
+tox
 ```
-
-
-
