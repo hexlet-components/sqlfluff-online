@@ -1,4 +1,4 @@
-"""Init the applicaiton."""
+"""Init the application."""
 
 from flask import Flask, render_template, request
 from flask_limiter import Limiter
