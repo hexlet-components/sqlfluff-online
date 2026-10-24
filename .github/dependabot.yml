@@ -2,6 +2,8 @@ version: 2
 updates:
   # Здесь именно pip, а не uv: проект живёт на requirements.txt и setup.py.
   - package-ecosystem: "pip"
+    cooldown:
+      default-days: 7
     directory: "/"
     schedule:
       interval: "monthly"
@@ -14,6 +16,8 @@ updates:
         patterns: ["*"]
 
   - package-ecosystem: "github-actions"
+    cooldown:
+      default-days: 7
     directory: "/"
     schedule:
       interval: "monthly"
