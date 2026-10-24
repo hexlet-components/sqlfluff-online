@@ -1,0 +1,3 @@
+[default.extend-words]
+# GAE это Google App Engine.
+GAE = "GAE"
